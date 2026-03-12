@@ -121,23 +121,65 @@ p {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-color: #2E2F42;
-    padding: 188px 0;
-    max-width: 1440px;
+
+    /* padding: 188px 0; */
+    padding: 72px 0;
+    /* max-width: 1440px; */
+    max-width: 320px;
+
     margin: auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (min-width: 768px) {
+    .hero {
+        max-width: 768px;
+        padding: 112px 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero {
+        max-width: 1440px;
+        padding: 188px 0;
+    }
+}
+
 .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #FFFFFF;
-    width: 496px;
+    color: #fff;
+
+    /* font-size: 56px; */
+    /* line-height: 1.07; */
+    /* width: 496px; */
+
+    width: 216px;
+
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
+    /* margin-bottom: 48px; */
 }
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-title {
+        margin-bottom: 48px;
+    }
+}
+
 .btn {
     cursor: pointer;
     background-color: #4D5AE5;
@@ -564,7 +606,7 @@ p {
 
 .footer-section .logo {
     justify-content: center;
-    /* align-items: center;     */
+    align-items: center;    
     margin: 0;
 }
 
@@ -583,6 +625,29 @@ p {
     /* align-items: baseline; */
 }
 
+@media screen and (min-width: 768px) {
+    .footer .container {
+        max-width: 584px;
+        padding: 0 16px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+        gap: 72px 0;
+        
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 .footer-section {
     display: flex;
     flex-direction: column;
@@ -592,6 +657,19 @@ p {
 }
 
 
+@media screen and (min-width: 768px) {
+    .footer-section {
+        display: block;
+        width: 264px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-section {
+        margin-right: 120px;
+    }
+}
+
 .footer-socials-thumb {
     display: flex;
     flex-direction: column;
@@ -599,6 +677,17 @@ p {
     align-items: center;
     color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+    .footer-socials-thumb {
+        display: block;
+    }
+}
+
+.footer-socials-text, .subscribe-text {
+    font-weight: 500;
+}
+
 .footer-socials-thumb > .footer-socials-text {
     margin-bottom: 16px;
 }
@@ -614,8 +703,32 @@ p {
     align-items: center;
     /* margin-left: auto; */
 }
+
+@media screen and (min-width: 768px) {
+    .subscribe-thumb {
+        display: block;
+        margin-right: auto;
+
+        width: 453px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscribe-thumb {
+        margin-right: auto;
+        /* margin-left: auto; */
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .subscribe-thumb {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
 .subscribe-text {
-    font-weight: 500;
+    /* font-weight: 500; */
     color: #fff;
     margin-bottom: 16px;
 }
@@ -627,7 +740,18 @@ p {
     align-items: center;
 }
 
-.footer-form-label {}
+@media screen and (min-width: 768px) {
+    .footer-form {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form-label {
+        margin-right: 24px;
+    }
+}
 
 .footer-form-filed {
     font-size: 12px;
@@ -646,6 +770,12 @@ p {
     padding: 8px 16px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+   .footer-form-filed {
+    width: 264px;
+   }
 }
 
 .footer-form-filed:focus {
@@ -676,6 +806,12 @@ p {
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* @media screen and (min-width: 768px) {
+    .footer-btn {
+        margin-left: auto;
+    }
+} */
 
 .footer-btn-icon {
     fill: #fff;
