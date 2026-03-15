@@ -22,12 +22,19 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header hide">
+    <header class="header">
       <div class="container">
         <nav class="nav">
           <a class="logo" href="./index.html"
             ><span class="blue-span">Web</span>Studio</a
           >
+
+          <button class="icon-menu-btn">
+            <svg class="icon-menu" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
           <ul class="nav-link-list">
             <li>
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -125,17 +132,21 @@
 
       <section class="section-team section">
         <div class="container">
-          <h2 class="section-title-center">Our Team</h2>
+          <h2 class="section-title">Our Team</h2>
           <ul class="workers">
             <li class="workers-item">
               <img
                 class="img"
-                src="./images/img-3.jpg"
+                srcset="
+                  ./images/team/img@1x-3.jpg 1x,
+                  ./images/team/img@2x-3.jpg 2x
+                "
+                src="./images/team/img@1x-3.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
               <div class="worker-wrapper">
-                <h3 class="sub-title-center">Mark Guerrero</h3>
+                <h3 class="sub-title">Mark Guerrero</h3>
                 <p class="worker-text">Product Designer</p>
 
                 <ul class="worker-socials">
@@ -189,12 +200,16 @@
             <li class="workers-item">
               <img
                 class="img"
-                src="./images/img-2.jpg"
+                srcset="
+                  ./images/team/img@1x-2.jpg 1x,
+                  ./images/team/img@2x-2.jpg 2x
+                "
+                src="./images/team/img@1x-2.jpg"
                 alt="Tom Ford"
                 width="264"
               />
               <div class="worker-wrapper">
-                <h3 class="sub-title-center">Tom Ford</h3>
+                <h3 class="sub-title">Tom Ford</h3>
                 <p class="worker-text">Frontend Developer</p>
 
                 <ul class="worker-socials">
@@ -248,12 +263,16 @@
             <li class="workers-item">
               <img
                 class="img"
-                src="./images/img-1.jpg"
+                srcset="
+                  ./images/team/img@1x-1.jpg 1x,
+                  ./images/team/img@2x-1.jpg 2x
+                "
+                src="./images/team/img@1x-1.jpg 1x"
                 alt="Camila Garcia"
                 width="264"
               />
               <div class="worker-wrapper">
-                <h3 class="sub-title-center">Camila Garcia</h3>
+                <h3 class="sub-title">Camila Garcia</h3>
                 <p class="worker-text">Marketing</p>
 
                 <ul class="worker-socials">
@@ -307,12 +326,16 @@
             <li class="workers-item">
               <img
                 class="img"
-                src="./images/img.jpg"
+                srcset="
+                  ./images/team/img@1x.jpg 1x,
+                  ./images/team/img@2x.jpg 2x
+                "
+                src="./images/team/img@2x.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
               <div class="worker-wrapper">
-                <h3 class="sub-title-center">Daniel Wilson</h3>
+                <h3 class="sub-title">Daniel Wilson</h3>
                 <p class="worker-text">UI Designer</p>
 
                 <ul class="worker-socials">
@@ -369,7 +392,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section-title-center">Our Portfolio</h2>
+          <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-thumb">
@@ -380,7 +403,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img6.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x-5.jpg 1x,
+                    ./images/portfolio/img@2x-5.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x-5.jpg"
                   alt="Banking App"
                   width="360"
                 />
@@ -399,7 +426,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img4.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x.jpg 1x,
+                    ./images/portfolio/img@2x.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x.jpg"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -418,7 +449,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img3.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x-4.jpg 1x,
+                    ./images/portfolio/img@2x-4.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x-4.jpg"
                   alt="Meditation App"
                   width="360"
                 />
@@ -437,7 +472,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img2.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x-3.jpg 1x,
+                    ./images/portfolio/img@2x-3.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x-3.jpg"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -456,7 +495,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img1.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x-2.jpg 1x,
+                    ./images/portfolio/img@2x-2.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x-2.jpg"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -475,7 +518,11 @@
                 </p>
                 <img
                   class="img"
-                  src="./images/img5.jpg"
+                  srcset="
+                    ./images/portfolio/img@1x-1.jpg 1x,
+                    ./images/portfolio/img@2x-1.jpg 2x
+                  "
+                  src="./images/portfolio/img@1x-1.jpg"
                   alt="Online Courses"
                   width="360"
                 />
@@ -568,6 +615,88 @@
       </div>
     </footer>
 
+    <div class="mobile-menu">
+      <div class="mobile-menu-container container">
+        <button class="modal-btn" type="button" aria-label="Close modal button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="nav-mobile">
+          <ul class="nav-mobile-list">
+            <li class="nav-mobile-list-item">
+              <a class="mobile-nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a class="mobile-nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-mobile-list-item">
+              <a class="mobile-nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-address">
+          <ul class="address-link-list">
+            <li>
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="worker-socials">
+          <li class="worker-socials-item">
+            <a
+              class="social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="worker-socials-item">
+            <a class="social-link" href="https://x.com/" target="_blank">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="worker-socials-item">
+            <a
+              class="social-link"
+              href="https://www.facebook.com"
+              target="_blank"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="worker-socials-item">
+            <a
+              class="social-link"
+              href="https://www.linkedin.com"
+              target="_blank"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Close modal button">
@@ -643,8 +772,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the&nbsp;
-            <a href="#" class="feedback-link">Privacy Policy</a>
+            <span>
+              I accept the terms and conditions of the
+              <a href="#" class="feedback-link">&nbsp;Privacy Policy</a>
+            </span>
           </label>
 
           <button class="btn" type="submit">Send</button>
