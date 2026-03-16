@@ -264,7 +264,7 @@ p {
 
 @media screen and (min-width: 1158px) {
     .hero {
-        max-width: 1140px;
+        max-width: 1440px;
         padding: 188px 0;
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office1@1x.jpg);
@@ -752,7 +752,7 @@ p {
     flex-direction: column;
     gap: 72px;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: baseline; */
 }
 
@@ -764,8 +764,8 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
 
-        justify-content: space-between;
-        gap: 72px 0;
+        /* justify-content: space-between; */
+        gap: 72px 24px;
         
     }
 }
@@ -1230,6 +1230,11 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
+.address-link-list .address-link-list-item:first-child .address-link, .nav-mobile-list .nav-mobile-list-item:first-child .mobile-nav-link {
+    color: #4d5ae5;
+}
+
+.nav-mobile-list .nav-mobile-list-item:first-child .mobile-nav-link
 
 .mobile-menu .worker-socials {
     gap: 40px;
