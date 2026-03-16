@@ -233,7 +233,7 @@ p {
     /* padding: 188px 0; */
     padding: 72px 0;
     /* max-width: 1440px; */
-    width: 320px;
+    max-width: 320px;
 
     margin: auto;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ p {
 
 @media screen and (min-width: 768px) {
     .hero {
-        width: 768px;
+        max-width: 768px;
         padding: 112px 0;
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/Dark-bg@1x.jpg);
@@ -264,7 +264,7 @@ p {
 
 @media screen and (min-width: 1158px) {
     .hero {
-        width: 1440px;
+        max-width: 1158px;
         padding: 188px 0;
 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office1@1x.jpg);
@@ -425,6 +425,7 @@ p {
 }
 
 .workers-item {
+    width: 264px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -660,7 +661,7 @@ p {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1158px) {
+@media screen and (max-width: 1157.9px) {
     .portfolio-list-item {
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
@@ -1230,6 +1231,5 @@ p {
 }
 
 .mobile-menu .worker-socials {
-    justify-content: center;
     gap: 40px;
 }
